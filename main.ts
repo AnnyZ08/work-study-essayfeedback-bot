@@ -49,11 +49,6 @@ serve(async (req: Request): Promise<Response> => {
     "Error loading syllabus."
   );
 
-  console.log(syllabusFile);
-  console.log(
-    `Loaded syllabus for ${body.course}, length = ${syllabus.length}`
-  );
-
   const messages = [
     {
       role: "system",
